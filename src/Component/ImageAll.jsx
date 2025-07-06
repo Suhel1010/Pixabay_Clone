@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
+import { useContext } from 'react'
 import PixabayContext from '../Contect/PixabayContext'
 
-
-const Images = () => {
+const ImageAll = () => {
     const { imageData } = useContext(PixabayContext)
     return (
         <div className="container my-5" >
@@ -16,6 +16,7 @@ const Images = () => {
             </div>
         </div>
     )
+
 }
 
-export default Images
+export default ImageAll
